@@ -1,6 +1,5 @@
 # Credit Card Fraud Detector
 
-> Synkoc AI/ML Internship — Capstone Project  
 > Domain: FinTech · Imbalanced Classification · SMOTE · ROC-AUC
 
 Detect fraudulent transactions in a dataset of 284,807 credit card transactions where only **0.17% are fraud**. This project implements the complete 8-phase ML pipeline — from data audit to a real-time scoring API — following industry practices used in production FinTech systems.
