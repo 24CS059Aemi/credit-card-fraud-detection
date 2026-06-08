@@ -273,6 +273,5 @@ This project was built as part of the **Synkoc AI/ML Internship** Capstone (Week
 
 ## Author
 
-**Your Name**  
-AI/ML Intern — Synkoc  
-[LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/yourusername)
+**Aemi Patel**
+[GitHub](https://github.com/24CS059Aemi)
