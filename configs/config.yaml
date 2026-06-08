@@ -1,0 +1,47 @@
+data:
+  raw_path: "data/raw/creditcard.csv"
+  processed_train: "data/processed/train.pkl"
+  processed_val: "data/processed/val.pkl"
+  processed_test: "data/processed/test.pkl"
+  test_size: 0.15
+  val_size: 0.176
+  random_state: 42
+
+preprocessing:
+  features_to_scale: ["Amount", "Time"]
+  target_column: "Class"
+
+smote:
+  random_state: 42
+  sampling_strategy: "auto"
+
+models:
+  logistic_regression:
+    max_iter: 1000
+    random_state: 42
+    class_weight: "balanced"
+  random_forest:
+    n_estimators: 100
+    n_jobs: -1
+    random_state: 42
+    class_weight: "balanced"
+  xgboost:
+    n_estimators: 200
+    learning_rate: 0.1
+    max_depth: 6
+    random_state: 42
+    eval_metric: "auc"
+
+evaluation:
+  primary_metric: "roc_auc"
+  target_roc_auc: 0.95
+  threshold_range: [0.1, 0.9]
+  threshold_step: 0.01
+
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  model_path: "models/best_model.pkl"
+  scaler_path: "models/scaler.pkl"
+  threshold_path: "models/best_threshold.pkl"
