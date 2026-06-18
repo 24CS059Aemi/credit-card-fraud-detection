@@ -1,4 +1,4 @@
-# Credit Card Fraud Detector
+# Credit Card Fraud Detection
 
 > Domain: FinTech · Imbalanced Classification · SMOTE · ROC-AUC
 
@@ -22,7 +22,7 @@ Optimal threshold tuned via F2-score (recall weighted 2× over precision).
 ## Project Structure
 
 ```
-credit-card-fraud-detector/
+credit-card-fraud-detection/
 │
 ├── configs/
 │   └── config.yaml              # All hyperparameters and paths in one place
@@ -85,8 +85,8 @@ Place the file at `data/raw/creditcard.csv`.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-card-fraud-detector.git
-cd credit-card-fraud-detector
+git clone https://github.com/24CS059Aemi/credit-card-fraud-detection.git
+cd credit-card-fraud-detection
 ```
 
 ### 2. Create virtual environment
